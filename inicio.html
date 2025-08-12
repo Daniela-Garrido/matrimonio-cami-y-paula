@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Matrimonio cami y paula</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- navbar transparente -->
+        <nav class="navbar navbar-expand-lg p-3">
+            <div class="container-fluid">
+                <h1>Nuestro Matrimonio</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mometos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- foto con nombres -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2018/08/21/19/46/wedding-3622006_1280.jpg"
+                    class="img-fluid w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Camina y Paula</h1>
+                    <p>Queremos que formes parte de este momento especial.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- seccion de fecha y cuenta regresiva -->
+        <section class="py-5 text-center bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <!-- Icono -->
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" fill="#e83e8c"
+                                class="bi bi-hearts" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.931.481c1.627-1.671 5.692 1.254 0 5.015-5.692-3.76-1.626-6.686 0-5.015Zm6.84 1.794c1.084-1.114 3.795.836 0 3.343-3.795-2.507-1.084-4.457 0-3.343ZM7.84 7.642c2.71-2.786 9.486 2.09 0 8.358-9.487-6.268-2.71-11.144 0-8.358Z" />
+                            </svg>
+                        </div>
+
+                        <!-- Párrafo -->
+                        <p class="lead mb-5">Después de 5 años de amor y aventuras juntas, hemos decidido unir nuestras
+                            vidas para siempre.</p>
+
+                        <!-- Fecha -->
+                        <h3 class="mb-4">20 de Octubre 2025</h3>
+
+                        <!-- Cuenta regresiva -->
+                        <div id="cuentaRegresiva" class="countdown-container d-flex justify-content-center gap-4 mb-4">
+                            <div class="text-center">
+                                <div class="countdown-number" id="dias">00</div>
+                                <div class="countdown-label">Días</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="countdown-number" id="horas">00</div>
+                                <div class="countdown-label">Horas</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="countdown-number" id="minutos">00</div>
+                                <div class="countdown-label">Minutos</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="countdown-number" id="segundos">00</div>
+                                <div class="countdown-label">Segundos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Cronograma -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center">
+                        <h2 class="mb-5" style= "font-family: 'Arizonia', cursive; font-size: 40px;">Nuestro Cronograma</h2>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Ceremonia</h4>
+                                    <p class="text-muted">16:00 hrs</p>
+                                    <p>Celebración de nuestro amor en la Capilla San Francisco</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Cóctel</h4>
+                                    <p class="text-muted">17:30 hrs</p>
+                                    <p>Brindis y aperitivos en los jardines</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Banquete</h4>
+                                    <p class="text-muted">19:00 hrs</p>
+                                    <p>Cena y celebración en el salón principal</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Fiesta</h4>
+                                    <p class="text-muted">21:00 hrs</p>
+                                    <p>¡Baile y diversión hasta la madrugada!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Sección de Regalos, Dresscode y Confirmación -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <!-- Regalos -->
+                            <div class="col-md-4 mb-4 mb-md-0">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e83e8c"
+                                            class="bi bi-gift mb-3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.7 2.7 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.5.5 0 0 0 .023.07zM9 3h2.932a.5.5 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg>
+                                        <h4>Regalos</h4>
+                                        <p class="mb-4">¡Tu presencia es lo más importante! Pero si deseas hacernos un
+                                            regalo,
+                                            puedes contribuir a nuestra luna de miel o elegir algo de nuestra lista.</p>
+                                        <a href="#" class="btn btn-outline-primary">Ver lista de regalos</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Dresscode -->
+                            <div class="col-md-4 mb-4 mb-md-0">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e83e8c"
+                                            class="bi bi-suit-heart mb-3" viewBox="0 0 16 16">
+                                            <path
+                                                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                        </svg>
+                                        <h4>Dresscode</h4>
+                                        <p class="mb-4">Queremos que luzcas tu mejor estilo. Código de vestimenta:
+                                            Formal
+                                            elegante. Evita tonos blancos y similares para no competir con las novias.
+                                        </p>
+                                        <div class="dresscode-colors">
+                                            <span class="color-box" style="background-color: #2c3e50;"></span>
+                                            <span class="color-box" style="background-color: #34495e;"></span>
+                                            <span class="color-box" style="background-color: #7f8c8d;"></span>
+                                            <span class="color-box" style="background-color: #bdc3c7;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Confirmación -->
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e83e8c"
+                                            class="bi bi-chat-square-text mb-3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        <h4>Confirmación</h4>
+                                        <p class="mb-4">Por favor confirma tu asistencia antes del 20 de septiembre de
+                                            2025. ¡Es importante para nuestra organización!</p>
+                                            <a href="#" class="btn btn-outline-primary">Confirmanos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="./assets/js/script.js">
+    
+    
+    <a href="https://wa.me/56912345678?text=¡Hola%20Camila%20y%20Paula!%20Confirmo%20mi%20asistencia%20a%20vuestra%20boda%20💍%20"
+        class="whatsapp-float" target="_blank">
+    
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    </body>
+    
+    </html>
