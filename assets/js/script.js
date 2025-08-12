@@ -33,3 +33,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+//musica
+ document.addEventListener('DOMContentLoaded', function() {
+        const audio = document.getElementById('weddingAudio');
+        const toggleBtn = document.getElementById('musicToggle');
+        const musicIcon = document.getElementById('musicIcon');
+        
+        // Intenta reproducir (los navegadores pueden bloquear el autoplay)
+        audio.volume = 0.3; // Volumen moderado
+        const playPromise = audio.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                // Si el autoplay falla, muestra el estado pausado
+                toggleBtn.innerHTML = '<i class="bi bi-play-fill"></i>';
+            });
+        }
+        
+        // Control para pausar/reanudar
+        toggleBtn.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                musicIcon.className = 'bi bi-music-note-beamed';
+            } else {
+                audio.pause();
+                musicIcon.className = 'bi bi-play-fill';
+            }
+        });
+        
+        // Cambiar ícono cuando la canción termina (para loop)
+        audio.addEventListener('ended', function() {
+            musicIcon.className = 'bi bi-music-note-beamed';
+        });
+    });
