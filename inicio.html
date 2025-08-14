@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/corazon.svg">
     <title>Matrimonio cami y paula</title>
 </head>
 
@@ -26,13 +26,10 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#ceremonia">Celebración</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mometos</a>
+                            <a class="nav-link" href="#fotos">Fotos</a>
                         </li>
                     </ul>
                 </div>
@@ -40,13 +37,14 @@
         </nav>
 
         <!-- foto con nombres -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height:500px;">
             <div class="carousel-item active">
-                <img src="https://cdn.pixabay.com/photo/2018/08/21/19/46/wedding-3622006_1280.jpg"
+                <img src="https://cdn.pixabay.com/photo/2019/05/16/18/39/bridal-bouquet-4207849_1280.jpg"
                     class="img-fluid w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Camina y Paula</h1>
-                    <p>Queremos que formes parte de este momento especial.</p>
+                    <h1 style="font-size: 65px;">Camila & Paula</h1>
+                    <p>"Con el corazón lleno de amor y emoción,<br>
+                        queremos que seas parte de uno de los días más importantes de nuestras vidas."</p>
                 </div>
             </div>
         </div>
@@ -61,7 +59,7 @@
                     <div class="col-md-8">
                         <!-- Icono -->
                         <div class="mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" fill="#e83e8c"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" fill="#160770"
                                 class="bi bi-hearts" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M4.931.481c1.627-1.671 5.692 1.254 0 5.015-5.692-3.76-1.626-6.686 0-5.015Zm6.84 1.794c1.084-1.114 3.795.836 0 3.343-3.795-2.507-1.084-4.457 0-3.343ZM7.84 7.642c2.71-2.786 9.486 2.09 0 8.358-9.487-6.268-2.71-11.144 0-8.358Z" />
@@ -69,14 +67,16 @@
                         </div>
 
                         <!-- Párrafo -->
-                        <p class="lead mb-5">Después de 5 años de amor y aventuras juntas, hemos decidido unir nuestras
-                            vidas para siempre.</p>
+                        <p class="lead mb-5">Después de 2 años y medio de amor y aventuras juntas, hemos decidido unir
+                            nuestras vidas para siempre.</p>
 
                         <!-- Fecha -->
-                        <h3 class="mb-4" style= "font-family: 'Arizonia', cursive; font-size: 40px;">20 de Octubre 2025</h3>
+                        <h3 class="mb-4" style="font-family: 'Arizonia', cursive; font-size: 55px;">25 de Octubre 2025
+                        </h3>
 
                         <!-- Cuenta regresiva -->
                         <div id="cuentaRegresiva" class="countdown-container d-flex justify-content-center gap-4 mb-4">
+                            <!-- Esto se mostrará normalmente -->
                             <div class="text-center">
                                 <div class="countdown-number" id="dias">00</div>
                                 <div class="countdown-label">Días</div>
@@ -93,46 +93,81 @@
                                 <div class="countdown-number" id="segundos">00</div>
                                 <div class="countdown-label">Segundos</div>
                             </div>
+
+                            <!-- Esto aparecerá automáticamente cuando sea 25 de Octubre 2025 -->
+                            <div id="mensajeDiaEvento" class="d-none text-center w-100">
+                                <h4 class="text-success">¡Hoy es el gran día!</h4>
+                                <p class="lead">Nos vemos en la ceremonia a las 18:00 hrs</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <!-- Sección de Cronograma -->
-        <section class="py-5">
+        <section id="ceremonia" class="py-5"
+            style="background-image:url(assets/img/pngegg\ \(27\).png);background-position: center; background-repeat: no-repeat;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10 text-center">
-                        <h2 class="mb-5" style= "font-family: 'Arizonia', cursive; font-size: 40px;">Nuestro Cronograma</h2>
+                        <h2 class="mb-5" style="font-family: 'Arizonia', cursive; font-size: 45px;">Ceremonia</h2>
 
                         <div class="timeline">
                             <div class="timeline-item">
                                 <div class="timeline-content">
-                                    <h4>Ceremonia</h4>
-                                    <p class="text-muted">16:00 hrs</p>
-                                    <p>Celebración de nuestro amor en la Capilla San Francisco</p>
+                                    <h4>Lugar</h4>
+                                    <p class="text-muted">18:00 hrs</p>
+                                    <p>Celebración de nuestro amor en Da Radda Las Condes</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-content">
-                                    <h4>Cóctel</h4>
-                                    <p class="text-muted">17:30 hrs</p>
-                                    <p>Brindis y aperitivos en los jardines</p>
+                                    <h4>Ubicación</h4>
+                                    <p class="text-muted"></p>
+                                    <p>Los Militares 4777, Las Condes, Santiago.</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-content">
-                                    <h4>Banquete</h4>
-                                    <p class="text-muted">19:00 hrs</p>
-                                    <p>Cena y celebración en el salón principal</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h4>Fiesta</h4>
-                                    <p class="text-muted">21:00 hrs</p>
-                                    <p>¡Baile y diversión hasta la madrugada!</p>
+                                    <h4>Mapa</h4>
+
+
+                                    <!-- Modal con mapa que SÍ muestra el marcador -->
+                                    <div class="modal fade" id="mapaModal" tabindex="-1"
+                                        aria-labelledby="mapaModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-light">
+                                                    <h5 class="modal-title" id="mapaModalLabel">
+                                                        <i class="bi bi-geo-alt-fill text-danger"></i> Da Radda Las
+                                                        Condes
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body p-0">
+                                                    <!-- Mapa alternativo que siempre muestra marcador -->
+                                                    <iframe
+                                                        src="https://maps.google.com/maps?q=Da%20Radda%20Las%20Condes,%20Los%20Militares%204777,%20Las%20Condes&z=17&output=embed&hl=es&t=m&markers=color:red|-33.412901,-70.577851"
+                                                        width="100%" height="450" style="border:0;" allowfullscreen
+                                                        loading="lazy">
+                                                    </iframe>
+                                                </div>
+                                                <div class="modal-footer bg-light">
+                                                    <button type="button" class="btn btn-outline-secondary"
+                                                        data-bs-dismiss="modal">
+                                                        <i class="bi bi-x-circle"></i> Cerrar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#mapaModal">
+                                        <i class="bi bi-map"></i> Ver ubicación en mapa
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -141,86 +176,112 @@
             </div>
         </section>
 
-        <!-- Galería de Imágenes -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5" style= "font-family: 'Arizonia', cursive; font-size: 40px;">Nuestra Historia en Fotos</h2>
-        
-        <div class="row g-4 gallery-container">
-            <!-- Imagen 1 -->
-            <div class="col-md-4 col-6 gallery-item">
-                <div class="gallery-img-container">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_640.jpg" 
-                         alt="" 
-                         class="img-fluid rounded-3">
-                    <div class="gallery-overlay">
-                        <div class="gallery-caption" style= "font-family: 'Arizonia', cursive; font-size: 30px;" >Nuestro primer año</div>
+
+
+        <!-- Modal con el mapa -->
+        <div class="modal fade" id="mapaModal" tabindex="-1" aria-labelledby="mapaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mapaModalLabel">Ubicación de la ceremonia</h5>
+                        <button type="button" class="btn-close" data-bs-close="modal" aria-label="Close"></button>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Imagen 2 -->
-            <div class="col-md-4 col-6 gallery-item">
-                <div class="gallery-img-container">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_640.jpg" 
-                         alt="" 
-                         class="img-fluid rounded-3">
-                    <div class="gallery-overlay">
-                        <div class="gallery-caption" style= "font-family: 'Arizonia', cursive; font-size: 30px;" >Vacaciones en la playa</div>
+                    <div class="modal-body">
+                        <!-- Iframe de Google Maps -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.123456789012!2d-70.12345678901234!3d-33.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDA3JzI0LjQiUyA3MMKwMDcnMjQuNCJX!5e0!3m2!1ses!2scl!4v1234567890123!5m2!1ses!2scl"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
-                </div>
-            </div>
-            
-            <!-- Imagen 3 -->
-            <div class="col-md-4 col-6 gallery-item">
-                <div class="gallery-img-container">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_640.jpg" 
-                         alt="" 
-                         class="img-fluid rounded-3">
-                    <div class="gallery-overlay">
-                        <div class="gallery-caption" style= "font-family: 'Arizonia', cursive; font-size: 30px;" >El día de la propuesta</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Imagen 4 -->
-            <div class="col-md-4 col-6 gallery-item">
-                <div class="gallery-img-container">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_640.jpg" 
-                         alt="" 
-                         class="img-fluid rounded-3">
-                    <div class="gallery-overlay">
-                        <div class="gallery-caption" style= "font-family: 'Arizonia', cursive; font-size: 30px;" >Momentos especiales</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Imagen 5 -->
-            <div class="col-md-4 col-6 gallery-item">
-                <div class="gallery-img-container">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_640.jpg" 
-                         alt="" 
-                         class="img-fluid rounded-3">
-                    <div class="gallery-overlay">
-                        <div class="gallery-caption" style= "font-family: 'Arizonia', cursive; font-size: 30px;">Invierno juntas</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Imagen 6 -->
-            <div class="col-md-4 col-6 gallery-item">
-                <div class="gallery-img-container">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_640.jpg" 
-                         alt="" 
-                         class="img-fluid rounded-3">
-                    <div class="gallery-overlay">
-                        <div class="gallery-caption" style= "font-family: 'Arizonia', cursive; font-size: 30px;">Risas compartidas</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+
+
+        <!-- Galería de Imágenes en Blanco y Negro -->
+        <section id="fotos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5" style="font-family: 'Arizonia', cursive; font-size: 45px;">Nuestra Historia
+                    en Fotos</h2>
+
+                <div class="row g-4 gallery-container">
+                    <!-- Imagen 1 -->
+                    <div class="col-md-4 col-6 gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="./assets/img/32dab5a2-0eb4-4d8a-9510-871e15b29bd5.JPG" alt="Nuestro primer año"
+                                class="img-fluid rounded-3 img-bw">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption" style="font-family: 'Arizonia', cursive; font-size: 30px;">
+                                    Nuestro primer año</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 2 -->
+                    <div class="col-md-4 col-6 gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="./assets/img/436178bb-3507-4d42-ada9-c1043538b8a9.JPG"
+                                alt="Vacaciones en la playa" class="img-fluid rounded-3 img-bw">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption" style="font-family: 'Arizonia', cursive; font-size: 30px;">
+                                    Amor y felicidad</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 3 -->
+                    <div class="col-md-4 col-6 gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="./assets/img/a90850ef-0385-452a-a3be-8684685edbaf (1).JPG"
+                                alt="El día de la propuesta" class="img-fluid rounded-3 img-bw">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption" style="font-family: 'Arizonia', cursive; font-size: 30px;">
+                                    El día de la propuesta</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 4 -->
+                    <div class="col-md-4 col-6 gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="./assets/img/e8fb7b58-c4da-4515-8e6c-1dde4dfd9ab0 (1).JPG"
+                                alt="Momentos especiales" class="img-fluid rounded-3 img-bw">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption" style="font-family: 'Arizonia', cursive; font-size: 30px;">
+                                    Momentos especiales</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 5 -->
+                    <div class="col-md-4 col-6 gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="./assets/img/8567e7c7-baa4-4a5a-bc4f-d73b409a5ff9.JPG" alt="Invierno juntas"
+                                class="img-fluid rounded-3 img-bw">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption" style="font-family: 'Arizonia', cursive; font-size: 30px;">
+                                    Vacaciones en la playa</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 6 -->
+                    <div class="col-md-4 col-6 gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="./assets/img/60eb3b6b-9313-4d43-95f8-7388f7f0e30a.JPG" alt="Risas compartidas"
+                                class="img-fluid rounded-3 img-bw">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption" style="font-family: 'Arizonia', cursive; font-size: 30px;">
+                                    Risas compartidas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!-- Sección de Regalos, Dresscode y Confirmación -->
@@ -233,7 +294,7 @@
                             <div class="col-md-4 mb-4 mb-md-0">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e83e8c"
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#160770"
                                             class="bi bi-gift mb-3" viewBox="0 0 16 16">
                                             <path
                                                 d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.7 2.7 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.5.5 0 0 0 .023.07zM9 3h2.932a.5.5 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
@@ -242,7 +303,8 @@
                                         <p class="mb-4">¡Tu presencia es lo más importante! Pero si deseas hacernos un
                                             regalo,
                                             puedes contribuir a nuestra luna de miel o elegir algo de nuestra lista.</p>
-                                        <a href="#" class="btn btn-outline-primary">Ver lista de regalos</a>
+                                        <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#regalosModal">Ver lista de regalos</a>
                                     </div>
                                 </div>
                             </div>
@@ -251,15 +313,15 @@
                             <div class="col-md-4 mb-4 mb-md-0">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e83e8c"
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#160770"
                                             class="bi bi-suit-heart mb-3" viewBox="0 0 16 16">
                                             <path
                                                 d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
                                         </svg>
                                         <h4>Dresscode</h4>
-                                        <p class="mb-4">Queremos que luzcas tu mejor estilo. Código de vestimenta:
-                                            Formal
-                                            elegante. Evita tonos blancos y similares para no competir con las novias.
+                                        <p class="mb-4">Para la ocasión, te invitamos a vestir con un look formal,
+                                            elegante pero sin necesidad de ser de gala. ¡Queremos que te sientas cómodo
+                                            y a gusto!.
                                         </p>
                                         <div class="dresscode-colors">
                                             <span class="color-box" style="background-color: #2c3e50;"></span>
@@ -275,7 +337,7 @@
                             <div class="col-md-4">
                                 <div class="card h-100 border-0 shadow-sm">
                                     <div class="card-body text-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e83e8c"
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#160770"
                                             class="bi bi-chat-square-text mb-3" viewBox="0 0 16 16">
                                             <path
                                                 d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
@@ -285,7 +347,8 @@
                                         <h4>Confirmación</h4>
                                         <p class="mb-4">Por favor confirma tu asistencia antes del 20 de septiembre de
                                             2025. ¡Es importante para nuestra organización!</p>
-                                            <a href="#" class="btn btn-outline-primary">Confirmanos</a>
+                                        <a href="https://wa.me/56997629084"
+                                            class="btn btn-outline-primary">Confirmanos</a>
                                     </div>
                                 </div>
                             </div>
@@ -293,77 +356,202 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- musica-->
-<div class="music-player fixed-bottom p-2 py-5 " style="z-index: 1000;">
-    <audio id="weddingAudio" autoplay loop>
-        <source src="./assets/img/Oasis - Stop Crying Your Heart Out (Official Video).mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
-    <button id="musicToggle" class="btn btn-outline-light rounded-circle" style="color: #ca0cb1;">
-        <i class="bi bi-music-note-beamed" id="musicIcon" style="color: #ca0cb1;"></i>
-    </button>
-    <span id="songTitle" class="text-white ms-2 d-none d-md-inline">Canción de nuestra boda</span>
-</div>
+            <!-- Modal para Regalos -->
+            <div class="modal fade" id="regalosModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content border-0" style="background-color: #fff5f7;">
+                        <!-- Header con rosas decorativas -->
+                        <div class="modal-header position-relative border-0 pb-0">
+                            <div class="w-100 text-center">
+                                <img src="https://cdn.pixabay.com/photo/2017/01/10/03/06/rose-1968358_640.png"
+                                    style="width: 80px; height: auto; position: absolute; top: -15px; left: 20px; transform: rotate(-30deg);">
+                                <h3 class="modal-title mx-auto"
+                                    style="font-family: 'Arizonia', cursive; font-size: 40px; color: #160770;">Nuestros
+                                    Regalos</h3>
+                                <img src="https://cdn.pixabay.com/photo/2017/01/10/03/06/rose-1968358_640.png"
+                                    style="width: 80px; height: auto; position: absolute; top: -15px; right: 20px; transform: rotate(30deg);">
+                            </div>
+                            <button type="button" class="btn-close position-absolute" style="top: 20px; right: 20px;"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <!-- Cuerpo del modal -->
+                        <div class="modal-body py-4 px-5">
+                            <div class="row">
+                                <!-- Columna izquierda - Lista de deseos -->
+                                <div class="col-md-6">
+                                    <h5 class="mb-4" style="color: #160770;">Lista de deseos</h5>
+
+                                    <div class="list-group mb-4">
+                                        <!-- Opción 1 -->
+                                        <div class="list-group-item border-0 mb-2 p-3 shadow-sm rounded">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="listaRegalos"
+                                                    id="regalo1">
+                                                <label class="form-check-label" for="regalo1">
+                                                    <h6>Cena romántica en restaurante premium</h6>
+                                                    <p class="small text-muted mb-0">Contribución: $100.000</p>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- Opción 2 -->
+                                        <div class="list-group-item border-0 mb-2 p-3 shadow-sm rounded">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="listaRegalos"
+                                                    id="regalo2">
+                                                <label class="form-check-label" for="regalo2">
+                                                    <h6>Noche en hotel boutique</h6>
+                                                    <p class="small text-muted mb-0">Contribución: $150.000</p>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- Opción 3 -->
+                                        <div class="list-group-item border-0 mb-2 p-3 shadow-sm rounded">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="listaRegalos"
+                                                    id="regalo3">
+                                                <label class="form-check-label" for="regalo3">
+                                                    <h6>Experiencia de spa para dos</h6>
+                                                    <p class="small text-muted mb-0">Contribución: $80.000</p>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- Opción 4 -->
+                                        <div class="list-group-item border-0 mb-2 p-3 shadow-sm rounded">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="listaRegalos"
+                                                    id="regalo4">
+                                                <label class="form-check-label" for="regalo4">
+                                                    <h6>Tour de vinos en valle cercano</h6>
+                                                    <p class="small text-muted mb-0">Contribución: $120.000</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info">
+                                        <i class="bi bi-info-circle me-2"></i> Por favor indícanos cuál opción elegiste
+                                        al realizar tu transferencia
+                                    </div>
+                                </div>
+
+                                <!-- Columna derecha - Información bancaria -->
+                                <div class="col-md-6">
+                                    <div class="sticky-top pt-3">
+                                        <h5 class="mb-3" style="color: #160770;">Información Bancaria</h5>
+                                        <div class="card border-0 shadow-sm">
+                                            <div class="card-body">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-3"><strong>Banco:</strong> Nombre del Banco</li>
+                                                    <li class="mb-3"><strong>Tipo de Cuenta:</strong> Cuenta Corriente
+                                                    </li>
+                                                    <li class="mb-3"><strong>Número:</strong> 1234-5678-9012-3456</li>
+                                                    <li class="mb-3"><strong>Titular:</strong> Camila & Paula</li>
+                                                    <li class="mb-3"><strong>RUT:</strong> 12.345.678-9</li>
+                                                    <li class="mb-3"><strong>Email:</strong>
+                                                        regalos@nuestromatrimonio.com</li>
+                                                </ul>
+
+                                                <!-- QR para transferencia 
+                                    <div class="text-center mt-4">
+                                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=BANCO:NombreBanco%0ACUENTA:1234567890123456%0ATITULAR:Camila%20%26%20Paula" 
+                                             alt="Código QR para transferencia" 
+                                             class="img-fluid mb-3"
+                                             style="max-width: 150px;">
+                                        <p class="small text-muted">Escanea este código para transferir</p>
+                                    </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer del modal -->
+                        <div class="modal-footer border-0 justify-content-center pt-0">
+                            <button type="button" class="btn btn-outline-secondary me-3"
+                                data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary"
+                                style="background-color: #160770; border-color: #160770;">
+                                <i class="bi bi-clipboard-check me-2"></i> Copiar datos bancarios
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- musica-->
+            <div class="music-player fixed-bottom p-2 py-5 " style="z-index: 1000;">
+                <audio id="weddingAudio" autoplay loop>
+                    <source src="./assets/img/Make You Feel My Love [QVeubNxaBsg].mp3" type="audio/mpeg">
+
+                </audio>
+                <button id="musicToggle" class="btn btn-outline-light rounded-circle" style="color: #160770;">
+                    <i class="bi bi-music-note-beamed" id="musicIcon" style="color: #160770;"></i>
+                </button>
+                <span id="songTitle" class="text-white ms-2 d-none d-md-inline"></span>
+            </div>
 
     </main>
 
     <footer class="py-5 bg-dark text-white">
-    <div class="container">
-        <div class="row">
-            <!-- Columna 1 - Logo/Nombre -->
-            <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
-                <h3 class="mb-3" style= "font-family: 'Arizonia', cursive; font-size: 30px;">Camila & Paula</h3>
-                <p>Uniendo nuestras vidas el<br>20 de Octubre de 2025</p>
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1 - Logo/Nombre -->
+                <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+                    <h3 class="mb-3" style="font-family: 'Arizonia', cursive; font-size: 35px;">Camila & Paula</h3>
+                    <p>Uniendo nuestras vidas el<br>25 de Octubre de 2025</p>
+                </div>
+
+                <!-- Columna 2 - Menú rápido -->
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h5 class="mb-3" style="font-family: 'Arizonia', cursive; font-size: 30px;">Nuestra Boda</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#ceremonia" class="text-white text-decoration-none">Ceremonia</a></li>
+                        <li><a href="#fotos" class="text-white text-decoration-none">Nosotras</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 - Contacto -->
+                <div class="col-md-4 text-center text-md-end">
+                    <h5 class="mb-3" style="font-family: 'Arizonia', cursive; font-size: 30px;">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="mailto:correo@matrimonio.com" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope-fill me-2"></i> ccavieresm@uft.edu
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="tel:+56997629084" class="text-white text-decoration-none">
+                                <i class="bi bi-telephone-fill me-2"></i> +56 9 97629084
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Columna 2 - Menú rápido -->
-            <div class="col-md-4 mb-4 mb-md-0 text-center">
-                <h5 class="mb-3" style= "font-family: 'Arizonia', cursive; font-size: 30px;">Nuestra Boda</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Nosotras</a></li>
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Ubicación</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Regalos</a></li>
-                </ul>
-            </div>
+            <hr class="my-4 bg-light">
 
-            <!-- Columna 3 - Contacto -->
-            <div class="col-md-4 text-center text-md-end">
-                <h5 class="mb-3" style= "font-family: 'Arizonia', cursive; font-size: 30px;">Contacto</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <a href="mailto:correo@matrimonio.com" class="text-white text-decoration-none">
-                            <i class="bi bi-envelope-fill me-2"></i> correo@matrimonio.com
-                        </a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="tel:+56912345678" class="text-white text-decoration-none">
-                            <i class="bi bi-telephone-fill me-2"></i> +56 9 1234 5678
-                        </a>
-                    </li>
-                </ul>
+            <!-- Derechos de autor -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small">© 2025 Camila & Paula - Todos los derechos reservados</p>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <hr class="my-4 bg-light">
-
-        <!-- Derechos de autor -->
-        <div class="row">
-            <div class="col-12 text-center">
-                <p class="mb-0 small">© 2025 Camila & Paula - Todos los derechos reservados</p>
-            </div>
-        </div>
-    </div>
-</footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="./assets/js/script.js">
-    
-    </body>
-    
-    </html>
+
+</body>
+
+</html>
